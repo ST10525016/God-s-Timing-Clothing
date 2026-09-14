@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(159, 18, 87);
+  font-family: Arial;
+  margin: 0;
+  padding: 20px;
+}
+h1 {
+  color: black;
+  text-align: center;
+}
+ul {
+  background: rgb(168, 99, 125);
+  padding: 15px;
+  text-align: center;
+}
+li {
+  display: inline;
+  margin: 15px;
+}
+li a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+}
+li a:hover {
+  color: white;
+}
