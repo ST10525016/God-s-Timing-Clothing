@@ -29,5 +29,3 @@ We also do custom prints for churches, groups, and events.
 - HTML
 - CSS
 
----
-© 2026 God's Timing Clothing. All rights reserved.
