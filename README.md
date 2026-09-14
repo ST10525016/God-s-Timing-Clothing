@@ -28,4 +28,21 @@ We also do custom prints for churches, groups, and events.
 ## Tech Used
 - HTML
 - CSS
+## Sitemap
+- Location in repo: /sitemap.xml (root folder)
+- Live URL: https://st10525016.github.io/God-s-Timing-Clothing/sitemap.xml
+- Purpose: Helps Google and search engines find all 6 pages (Home, About, Services, Enquiry, Contact, Payment)
 
+## Colours and Fonts
+**Colours:**
+- Pink #e891a6: Brand colour, warm, feminine, matches clothing identity
+- Black #000000: For text, good contrast and readability
+- White #ffffff: Background, clean and professional
+
+**Fonts:**
+- Headings: Poppins / Arial Black - Bold and modern for brand name
+- Body: Arial, sans-serif - Simple and readable for product info
+
+## SEO and Features
+- Added Google Map on Contact page (Sky City Mall Alberton)
+- Added sitemap.xml for SEO
