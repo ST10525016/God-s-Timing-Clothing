@@ -47,3 +47,9 @@ li a {
 li a:hover {
   color: white;
 }
+/* 2.4 - Responsive Design */
+@media (max-width: 768px) {
+  li { display: block; margin: 10px 0; }
+  h1 { font-size: 24px; }
+  img { width: 100%; height: auto; }
+}
