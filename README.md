@@ -46,3 +46,16 @@ We also do custom prints for churches, groups, and events.
 ## SEO and Features
 - Added Google Map on Contact page (Sky City Mall Alberton)
 - Added sitemap.xml for SEO
+## Changelog
+
+| Date | File Changed | Fix Made | Reason |
+|------|--------------|----------|--------|
+| 2026-05-13 | contact.html | Added Google Map iframe for Sky City Mall | POE feedback - missing map |
+| 2026-05-13 | sitemap.xml | Created sitemap.xml in root folder | SEO requirement |
+| 2026-05-14 | css/style.css | Added Reset (*), Base (body), Typography (h1,h2,h3,p) | Part 2 - 2.2 and 2.3 |
+| 2026-05-14 | css/style.css | Kept brand pink #b51158 background | Fix background colour |
+| 2026-05-14 | css/style.css | Added @media (max-width:768px) responsive | Part 2 - 2.4 Responsive |
+
+## References
+- Google Maps Embed
+- Poppins font from Google Fonts
