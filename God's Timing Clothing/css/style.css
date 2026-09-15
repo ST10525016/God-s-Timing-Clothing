@@ -1,9 +1,31 @@
-body {
-  background-color: rgb(159, 18, 87);
-  font-family: Arial;
+ /* 2.2 - CSS Reset */
+* {
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* 2.2 - Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000;
+  background-color: #b51158;
+}
+
+/* 2.3 - Typography */
+h1, h2, h3 {
+  font-family: 'Poppins', Arial Black, sans-serif;
+  font-weight: 700;
+  color: #000;
+}
+p {
+  font-family: Arial, sans-serif;
+  margin-bottom: 1em;
+}
+
+
 h1 {
   color: black;
   text-align: center;
