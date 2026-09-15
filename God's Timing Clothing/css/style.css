@@ -3,57 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* 2.2 - Base Styles */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #000;
-  background-color: #b51158;
-}
-
-/* 2.3 - Typography */
-h1, h2, h3 {
-  font-family: 'Poppins', Arial Black, sans-serif;
-  font-weight: 700;
-  color: #000;
-}
-p {
-  font-family: Arial, sans-serif;
-  margin-bottom: 1em;
-}
-
-
-h1 {
-  color: black;
-  text-align: center;
-}
-ul {
-  background: rgb(168, 99, 125);
-  padding: 15px;
-  text-align: center;
-}
-li {
-  display: inline;
-  margin: 15px;
-}
-li a {
-  color: gold;
-  text-decoration: none;
-  font-weight: bold;
-}
-li a:hover {
-  color: white;
-}
-/* 2.4 - Responsive Design */
-@media (max-width: 768px) {
-  li { display: block; margin: 10px 0; }
-  h1 { font-size: 24px; }
-  img { width: 100%; height: auto; }
-}
-/* 2.4 - Create a Layout Structure - Flexbox & Grid */
+}/* 2.4 - Create a Layout Structure - Flexbox & Grid */
 nav ul {
   display: flex;
   justify-content: center;
@@ -91,3 +41,11 @@ a:focus, button:focus {
 a:active {
   color: black;
 }
+h1 { font-size: 2rem; }
+p { font-size: 1em; margin: 1em 0; }
+.product-grid { width: 90%; }
+.card { width: 100%; }
+
+/* 3.3 - Responsive Images already done */
+img { width: 100%; height: auto; max-width: 100%; }
+
