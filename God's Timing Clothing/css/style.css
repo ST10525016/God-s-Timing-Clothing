@@ -53,3 +53,41 @@ li a:hover {
   h1 { font-size: 24px; }
   img { width: 100%; height: auto; }
 }
+/* 2.4 - Create a Layout Structure - Flexbox & Grid */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 2.5 - Apply Visual Styles */
+.card {
+  background-color: white;
+  border: 2px solid #b51158;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 15px;
+  color: #333;
+}
+a:hover {
+  color: #b51158;
+  text-decoration: underline;
+}
+button:hover {
+  background-color: #b51158;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+a:focus, button:focus {
+  outline: 2px solid #b51158;
+}
+a:active {
+  color: black;
+}
