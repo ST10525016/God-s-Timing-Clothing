@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Best Practices -->
+    <title>Register | God's Timing Clothing - Create Account</title>
+    <meta name="description" content="Create an account with God's Timing Clothing to order faith-inspired apparel faster and track your orders.">
+    <meta name="keywords" content="God's Timing Clothing register, create account, Christian clothing SA">
+    <meta name="author" content="God's Timing Clothing">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>God's Timing Clothing</h1>
+    <nav>
+        <ul id="navMenu">
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="registration.html" class="active">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="menuToggle">☰</button>
+    </nav>
+</header>
+
+<main>
+    <section class="form-container">
+        <h2>Create Your Account</h2>
+        <p>Join the God's Timing family and get 10% off your first order!</p>
+        
+        <p id="regMessage"></p>
+
+        <form id="registrationForm" novalidate>
+            <label>Full Name *</label>
+            <input type="text" id="regName" name="fullname" placeholder="e.g. Thabo Molefe" required>
+            <small class="error" id="regNameError"></small>
+
+            <label>Email Address *</label>
+            <input type="email" id="regEmail" name="email" placeholder="e.g. thabo@gmail.com" required>
+            <small class="error" id="regEmailError"></small>
+
+            <label>Phone Number *</label>
+            <input type="tel" id="regPhone" name="phone" placeholder="e.g. 071 123 4567" required>
+            <small class="error" id="regPhoneError"></small>
+
+            <label>Password *</label>
+            <input type="password" id="regPassword" name="password" placeholder="Min 8 characters" required>
+            <small class="error" id="regPasswordError"></small>
+
+            <label>Confirm Password *</label>
+            <input type="password" id="regConfirmPassword" name="confirmPassword" required>
+            <small class="error" id="regConfirmError"></small>
+
+            <label>How did you hear about us?</label>
+            <select id="regSource" name="source">
+                <option value="">-- Select --</option>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="friend">Friend / Church</option>
+                <option value="tiktok">TikTok</option>
+            </select>
+
+            <div class="checkbox">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to the Terms and Conditions *</label>
+            </div>
+            <small class="error" id="termsError"></small>
+
+            <button type="submit" class="btn">Register Now</button>
+            <button type="reset" class="btn secondary">Clear Form</button>
+            
+            <p class="login-link">Already have an account? <a href="enquiry.html">Login here</a></p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 God's Timing Clothing. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
