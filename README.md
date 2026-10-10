@@ -59,3 +59,48 @@ We also do custom prints for churches, groups, and events.
 ## References
 - Google Maps Embed
 - Poppins font from Google Fonts
+## Changelog
+
+### Part 3 - Enhancing Functionality and SEO
+- Fixed folder structure: moved css/style.css, js/script.js, images/ to root level for Netlify deployment
+- Fixed registration.html styling: centered form container with .form-container class
+- Added SEO meta tags to all pages: description, keywords, author
+- Added sitemap.xml to root folder for SEO
+- Fixed Google Map embed on contact.html
+- Implemented JavaScript validation for registration and enquiry forms with error messages
+- Updated responsive navigation with menuToggle functionality
+- Deployed website on Netlify
+# God's Timing Clothing - ST10525016
+
+**Student:** Letelo Chabalala
+**Student Number:** ST10525016
+**Module:** WEDE5020 / DISD / POE
+
+## About The Project
+God's Timing Clothing is a faith-based fashion e-commerce website that sells clothing with the message "Faith, Fashion, Purpose". The brand promotes the message that God's timing is always perfect.
+
+## Live Links
+- **Live Website:** https://gods-timing-clothing-letelo.netlify.app
+- **GitHub Repo:** https://github.com/letelochabalala9/ST10525016-God-s-Timing-Clothing
+
+## Features
+- Homepage with brand message
+- Product listing
+- About Us page
+- Services page
+- Responsive design for mobile and desktop
+- Hosted on Netlify with continuous deployment from GitHub
+
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- Git & GitHub for version control
+- Netlify for hosting
+
+## How to Run Locally
+1. Clone the repo
+2. Open index.html in browser
+
+## Deployment
+This site is automatically deployed via Netlify. Any push to the main branch on GitHub triggers a new deployment.
