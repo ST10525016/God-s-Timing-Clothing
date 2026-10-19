@@ -178,7 +178,7 @@ nav a {
 .product-card {
   background: #fff;
   padding: 10px;
-  border: 1px solid #eee;
+  border: 1px solid #f1096a;
   text-align: center;
 }
 .product-card img {
@@ -190,8 +190,8 @@ nav a {
   transform: scale(1.05);
 }
 .accordion-header {
-  background: #111;
-  color: #fff;
+  background: #ed69ce;
+  color: #ee36aa;
   padding: 12px;
   margin-top: 5px;
   cursor: pointer;
@@ -199,13 +199,13 @@ nav a {
 .accordion-body {
   display: none;
   padding: 10px;
-  background: #eee;
+  background: #f193c7;
 }
 #map {
   height: 300px;
   width: 100%;
   margin-top: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #f56cac;
 }
 .modal {
   display: none;
@@ -214,13 +214,13 @@ nav a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
+  background: rgba(192, 12, 84, 0.6);
   justify-content: center;
   align-items: center;
   z-index: 1000;
 }
 .modal-content {
-  background: #fff;
+  background: #f35fba;
   padding: 20px;
   border-radius: 8px;
   width: 90%;
@@ -241,7 +241,7 @@ nav a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.85);
+  background: rgba(239, 119, 191, 0.85);
   justify-content: center;
   align-items: center;
   z-index: 999;
@@ -251,8 +251,8 @@ nav a {
   max-height: 90%;
 }
 footer {
-  background: #111;
-  color: #fff;
+  background: #dc4d81;
+  color: #e56daf;
   text-align: center;
   padding: 15px;
   margin-top: 20px;
