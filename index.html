@@ -1,36 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>God's Timing Clothing</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>God's Timing Clothing</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-  <header>
-    <img src="images/LOGO 1.png" alt="God's Timing Logo" width="150">
-    <h1>God's Timing Clothing</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="enquiry.html">Enquiry</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <img src="images/T-shirt+Hoodies.png" alt="God's Timing Collection" style="width:100%; max-width:800px; margin:auto;">
+<header>
+  <img src="images/LOGO 1.png" alt="Logo" class="logo">
+  <h1>God's Timing Clothing</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="enquiry.html">Enquiry</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <img src="images/T-shirt+Hoodies.png" alt="Hero">
+    <div>
       <h2>Welcome</h2>
-      <p>Faith-based clothing for God's timing.</p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; God's Timing Clothing. All rights reserved</p>
-  </footer>
+      <p>Faith-based clothing for God's timing is always perfect.</p>
+      <button id="openModal">Enquire Now</button>
+    </div>
+  </section>
+
+  <!-- TABS - Requirement 1 -->
+  <section>
+    <h2>Shop by Category</h2>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="all">All</button>
+      <button class="tab-btn" data-tab="caps">Caps</button>
+      <button class="tab-btn" data-tab="hoodies">Hoodies</button>
+      <button class="tab-btn" data-tab="shirts">T-Shirts</button>
+    </div>
+    <div id="productGrid" class="grid"></div>
+  </section>
+
+  <!-- ACCORDION - Requirement 1 -->
+  <section>
+    <h2>Our Services FAQ</h2>
+    <div class="accordion">
+      <div class="accordion-header">Do you do custom printing?</div>
+      <div class="accordion-body">Yes, we do bulk custom printing from 10 items upwards.</div>
+      <div class="accordion-header">Delivery time?</div>
+      <div class="accordion-body">2-3 days Gauteng, 3-5 days nationwide.</div>
+      <div class="accordion-header">Returns policy?</div>
+      <div class="accordion-body">7 day return if unworn.</div>
+    </div>
+  </section>
+
+  <!-- MAP - Requirement 2 -->
+  <section>
+    <h2>Find Us</h2>
+    <div id="map"></div>
+  </section>
+</main>
+
+<!-- MODAL - Requirement 1 -->
+<div id="enquiryModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h3>Quick Enquiry</h3>
+    <p>Contact us on WhatsApp: 071 123 4567</p>
+    <a href="enquiry.html">Go to enquiry page</a>
+  </div>
+</div>
+
+<!-- LIGHTBOX - Requirement 5 -->
+<div id="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="">
+</div>
+
+<footer>
+  <p>&copy; God's Timing Clothing. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
 
