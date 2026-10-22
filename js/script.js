@@ -50,3 +50,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   document.querySelectorAll(".card, .gallery-img").forEach((el) => observer.observe(el));
 });
+const gtProducts = [
+  { name: "Hoodies", price: 350, img: "images/hoodies.png", desc: "Warm faith-based hoodies - R350" },
+  { name: "T-Shirts", price: 200, img: "images/T-shirt.png", desc: "Soft cotton T-shirts - R200" },
+  { name: "Faith Caps", price: 150, img: "images/cap.png", desc: "Stylish caps - R150" }
+];
+
+function loadProducts(list = gtProducts) {
+  const container = document.getElementById("product-container");
+  if (!container) return;
+  container.innerHTML = "";
+  list.forEach(p => {
+    container.innerHTML += `<div class="card"><img src="${p.img}" alt="${p.name}"><h3>${p.name}</h3><p>${p.desc}</p><button>Buy Now</button></div>`;
+  });
+}
+
+document.getElementById("searchInput")?.addEventListener("keyup", function() {
+  const q = this.value.toLowerCase();
+  const filtered = gtProducts.filter(p => p.name.toLowerCase().includes(q));
+  loadProducts(filtered);
+});
+
+loadProducts();
