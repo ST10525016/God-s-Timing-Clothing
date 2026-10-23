@@ -86,6 +86,44 @@
 
          </section>
 
+         <section>
+    <h2>Enquire About Our Products</h2>
+    <p>Check price and availability - caps, hoodies, t-shirts, or sponsorship.</p>
+
+    <form id="enquiryForm" onsubmit="handleEnquiry(event)">
+      <label>Full Name:</label><br>
+      <input type="text" id="eName" required><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" id="eEmail" required><br><br>
+
+      <label>Product:</label><br>
+      <select id="product" required>
+        <option value="">-- Choose --</option>
+        <option value="Cap">Cap - R150</option>
+        <option value="Hoodie">Hoodie - R350</option>
+        <option value="T-Shirt">T-Shirt - R250</option>
+        <option value="Custom Order">Custom Order</option>
+        <option value="Sponsorship">Sponsorship</option>
+      </select><br><br>
+
+      <label>Size:</label><br>
+      <select id="size" required>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+      </select><br><br>
+
+      <label>Enquiry Type:</label><br>
+      <select id="enquiryType" required>
+        <option value="Price">Price</option>
+        <option value="Availability">Availability</option>
+        <option value="Sponsor">Become a Sponsor</option>
+      </select><br><br>
+
+      <button type="submit">Check Price & Availability</button>
+    </form>
+</section>
     </main>
 
     <footer>
@@ -96,5 +134,8 @@
 
     </footer>
 
-    </body>
-    <html>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+    

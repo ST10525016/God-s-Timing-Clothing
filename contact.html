@@ -33,6 +33,27 @@
             <h3>Email</h3>
             <p><a href="mailto:st10525016@rccconnect.edu.za">st10525016@rccconnect.edu.za</a></p>
             <p><a href="mailto:info@godstiming.co.za">info@godstiming.co.za</a></p>
+                <h2>Send us a Message</h2>
+    <form id="contactForm" onsubmit="handleContact(event)">
+      <label>Full Name:</label><br>
+      <input type="text" id="cName" required placeholder="Your name"><br><br>
+
+      <label>Email:</label><br>
+      <input type="email" id="cEmail" required placeholder="your@email.com"><br><br>
+
+      <label>Type of Message:</label><br>
+      <select id="cType" required>
+        <option value="General Enquiry">General Enquiry</option>
+        <option value="Complaint">Complaint</option>
+        <option value="Compliment">Compliment</option>
+        <option value="Collaboration">Collaboration</option>
+      </select><br><br>
+
+      <label>Your Message:</label><br>
+      <textarea id="cMessage" required rows="5" placeholder="Type your message..."></textarea><br><br>
+
+      <button type="submit">Send Email</button>
+    </form>
 
             <h3>Location</h3>
             <p>Sky City Mall Alberton<br>

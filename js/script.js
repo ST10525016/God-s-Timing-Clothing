@@ -72,3 +72,48 @@ document.getElementById("searchInput")?.addEventListener("keyup", function() {
 });
 
 loadProducts();
+// === ENQUIRY.HTML - Product Enquiry (POE Section 4) ===
+function handleEnquiry(event){
+  event.preventDefault();
+  let name = document.getElementById("eName").value;
+  let email = document.getElementById("eEmail").value;
+  let product = document.getElementById("product").value;
+  let size = document.getElementById("size").value;
+  let enquiryType = document.getElementById("enquiryType").value;
+
+  if(name === "" || email === "" || product === ""){
+    alert("Please fill in all required fields");
+    return;
+  }
+
+  let price = "";
+  let stock = "In Stock - 10 available";
+  if(product === "Cap") price = "R150";
+  if(product === "Hoodie") price = "R350";
+  if(product === "T-Shirt") price = "R250";
+  if(product === "Custom Order") price = "From R400";
+  if(product === "Sponsorship") price = "Partnership packages from R1000";
+
+  alert(`Hi ${name}!\n\nProduct: ${product} (${size})\nEnquiry: ${enquiryType}\nPrice: ${price}\nStatus: ${stock}\n\nWe will email you at ${email} with more details!`);
+  document.getElementById("enquiryForm").reset();
+}
+
+// === CONTACT.HTML - General Contact (POE Section 4) ===
+function handleContact(event){
+  event.preventDefault();
+  let name = document.getElementById("cName").value;
+  let email = document.getElementById("cEmail").value;
+  let type = document.getElementById("cType").value;
+  let message = document.getElementById("cMessage").value;
+
+  if(name === "" || email === "" || message === ""){
+    alert("Please fill in all fields");
+    return;
+  }
+
+  let subject = `${type} - Message from ${name}`;
+  let body = `Name: ${name}%0D%0AEmail: ${email}%0D%0AType: ${type}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+  
+  window.location.href = `mailto:godstimingclothing@gmail.com?subject=${subject}&body=${body}`;
+  alert("Thank you! Your email client will open now to send the message.");
+}
