@@ -104,3 +104,60 @@ God's Timing Clothing is a faith-based fashion e-commerce website that sells clo
 
 ## Deployment
 This site is automatically deployed via Netlify. Any push to the main branch on GitHub triggers a new deployment.
+# God's Timing Clothing - WEDE5020 POE
+
+Student POE for Web Development. A simple clothing brand website selling Caps and Hoodies.
+
+## Live Site
+[Your GitHub Pages link here - e.g. https://yourusername.github.io/gods-timing/]
+
+## Website Pages
+- `index.html` - Home page
+- `about.html` - About the brand
+- `products.html` - Product listing (Cap R150, Hoodie R350)
+- `enquiry.html` - Enquiry form with price check
+- `contact.html` - Contact us form
+
+### Form Elements
+- Used appropriate HTML form elements: `input` (text, email), `textarea`, `select`, `button`
+- `enquiry.html`: eName, eEmail, product select, size select (M/L/XL), enquiryType select
+- `contact.html`: cName, cEmail, cType select, cMessage textarea
+
+### Form Validation
+- HTML5 validation: `required` attribute on all inputs
+- `type="email"` for email format validation
+- JavaScript validation in `js/script.js`
+
+### Form Submission
+- Uses form `onsubmit` attribute: `onsubmit="handleEnquiry(event)"` and `handleContact(event)`
+- JavaScript handles submission with `event.preventDefault()`
+
+### JavaScript Form Validation
+- **Client-Side Validation:** Checks if fields are empty before submission
+- **Error Handling:** Displays alert messages if form data is invalid
+- **AJAX/Form Submission:** Uses JavaScript to process data and mailto for sending, providing better user experience without page reload
+- File: `js/script.js` linked at bottom of all pages: `<script src="js/script.js"></script>`
+
+## Price Logic (Enquiry)
+- Cap - R150
+- Hoodie - R350
+- Golf T-Shirt - R250
+- Implemented in handleEnquiry() function
+
+## 5. GitHub Repository
+- Regular commits with descriptive messages
+- All files committed: HTML, CSS, JS, images
+
+## How to Test Forms
+1. Open `enquiry.html` in browser
+2. Fill Full Name, Email, choose Product and Size
+3. Click "Check Price" - alert will show price and open email client
+4. Open `contact.html` - fill form and submit - opens mailto
+
+## Technologies
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- GitHub & GitHub Pages
+
+© God's Timing Clothing - All Rights Reserved
